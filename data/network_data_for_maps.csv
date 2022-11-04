@@ -1,0 +1,17 @@
+Route Type,Origin ID,Origin Name,Origin Latitude,Origin Longitude,Destination ID,Destination Name,Dest Lat,Dest Long
+Supplier to Plant,"Omaha, Nebraska",Supplier 1,41.2587459,-95.9383758,"Denver, CO",Plant 1,39.7392364,-104.984862
+Supplier to Plant,"Houston, TX",Supplier 2,29.7589382,-95.3676974,"Denver, CO",Plant 1,39.7392364,-104.984862
+Supplier to Plant,"San Diego, CA",Supplier 3,32.7174202,-117.1627728,"Denver, CO",Plant 1,39.7392364,-104.984862
+Plant to Whse,"Denver, CO",Plant 1,39.7392364,-104.984862,"Miami, FL",Whse 1,25.7741728,-80.19362
+Plant to Whse,"Denver, CO",Plant 1,39.7392364,-104.984862,"Albany, NY",Whse 2,42.6511674,-73.754968
+Plant to Whse,"Denver, CO",Plant 1,39.7392364,-104.984862,"Portland, OR",Whse 3,45.5202471,-122.674194
+Whse to Cust,"Albany, NY",Whse 2,42.6511674,-73.754968,"Willow Grove, PA",Cust 1,40.1507046,-75.11623056
+Whse to Cust,"Albany, NY",Whse 2,42.6511674,-73.754968,"Mars, PA",Cust 2,40.6958342,-80.011878
+Whse to Cust,"Albany, NY",Whse 2,42.6511674,-73.754968,"Louisville, KY",Cust 3,38.2542376,-85.759407
+Whse to Cust,"Albany, NY",Whse 2,42.6511674,-73.754968,"Indianpolis, IN",Cust 4,,
+Whse to Cust,"Portland, OR",Whse 3,45.5202471,-122.674194,"San Fransico, CA",Cust 5,32.72793,-117.15529
+Whse to Cust,"Portland, OR",Whse 3,45.5202471,-122.674194,"San Diego, CA",Cust 6,32.7174202,-117.1627728
+Whse to Cust,"Portland, OR",Whse 3,45.5202471,-122.674194,"Las Vegas, NV",Cust 7,36.1672559,-115.148516
+Whse to Cust,"Miami, FL",Whse 1,25.7741728,-80.19362,"Jacksonville, FL",Cust 8,30.3321838,-81.655651
+Whse to Cust,"Miami, FL",Whse 1,25.7741728,-80.19362,Atlanta GA,Cust 9,33.769805,-84.414581
+Whse to Cust,"Miami, FL",Whse 1,25.7741728,-80.19362,"Winston Salem, NC",Cust 10,36.0998131,-80.2440518

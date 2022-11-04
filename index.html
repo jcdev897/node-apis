@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function makeId(length) {
+      var result           = '';
+      var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for ( var i = 0; i < length; i++ ) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+    var requestData = 'Some text sent to API ...';
+    var id = makeId(10);
+    fetch('/app-data/{id}', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: requestData
+    })
+        .then((response) => response.text())
+        .then((responseData) => {
+      	  console.log('Success: ', responseData);
+        })
+        .catch((error) => {
+            console.error('Error: ', error);
+        });
+    
+  </script>
+</body>
+</html>

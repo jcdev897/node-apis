@@ -1,0 +1,20 @@
+Route ID,Route Leg,Origin ID,Origin ID,Origin Latitude,Origin Longitude,Destination ID,Dest Lat,Dest Long
+5000389409,1,"Depot Allentown, PA","Depot Allentown, PA",40.6022059,-75.4712794,"Lansdowne, PA",39.9381682,-75.2718507
+5000389409,2,"Depot Allentown, PA","Lansdowne, PA",39.9381682,-75.2718507,"Darby, PA",39.9184,-75.2591
+5000389409,3,"Lansdowne, PA","Darby, PA",39.9184,-75.2591,"Yeadon, PA",39.9390017,-75.2554605
+5000389409,4,"Darby, PA","Yeadon, PA",39.9390017,-75.2554605,"Depot Allentown, PA",40.6022059,-75.4712794
+5000590045,1,"Depot Allentown, PA","Depot Allentown, PA",40.6022059,-75.4712794,"Levittown, PA",40.15755605,-74.83212877
+5000590045,2,"Depot Allentown, PA","Levittown, PA",40.15755605,-74.83212877,"Philadelphia, PA",39.9527237,-75.1635262
+5000590045,3,"Levittown, PA","Philadelphia, PA",39.9527237,-75.1635262,"Willow Grove, PA",40.1507046,-75.11623056
+5000590045,4,"Philadelphia, PA","Willow Grove, PA",40.1507046,-75.11623056,"Lansdale, PA",40.2414952,-75.2837862
+5000590045,5,"Willow Grove, PA","Lansdale, PA",40.2414952,-75.2837862,"Depot Allentown, PA",40.6022059,-75.4712794
+5000886774,1,"Depot Allentown, PA","Depot Allentown, PA",40.6022059,-75.4712794,"Washington, NJ",40.7584326,-74.9793378
+5000886774,2,"Depot Allentown, PA","Washington, NJ",40.7584326,-74.9793378,"Bradley Gardens, NJ",40.5628809,-74.6546036
+5000886774,3,"Washington, NJ","Bradley Gardens, NJ",40.5628809,-74.6546036,"Princeton, NJ",40.3492744,-74.6592958
+5000886774,4,"Bradley Gardens, NJ","Princeton, NJ",40.3492744,-74.6592958,"Trenton, NJ",40.2205944,-74.7597219
+5000886774,5,"Princeton, NJ","Trenton, NJ",40.2205944,-74.7597219,"Depot Allentown, PA",40.6022059,-75.4712794
+5000582206,1,"Depot Allentown, PA","Depot Allentown, PA",40.6022059,-75.4712794,"Lebanon, PA",40.3429683,-76.4233816
+5000582206,2,"Depot Allentown, PA","Lebanon, PA",40.3429683,-76.4233816,"Ephrata, PA",40.1799111,-76.1789242
+5000582206,3,"Lebanon, PA","Ephrata, PA",40.1799111,-76.1789242,"Wyomissing, PA",40.329537,-75.9652117
+5000582206,4,"Ephrata, PA","Wyomissing, PA",40.329537,-75.9652117,"Emmaus, PA",40.5395421,-75.4968502
+5000582206,5,"Wyomissing, PA","Emmaus, PA",40.5395421,-75.4968502,"Depot Allentown, PA",40.6022059,-75.4712794
