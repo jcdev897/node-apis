@@ -20,13 +20,14 @@ module.exports = {
     });
     return 'testa';
   },
-  getAllConfig: function () {
+  getAllConfig: function (tableName) {
     db.serialize(() => {  
-      db.each(`SELECT id, data FROM configs`, (err, row) => {
+      db.all(`SELECT * FROM ${tableName}`, (err, rows) => {
         if (err){
           throw err;
         }
-        console.log(row.id + " " + row.data);
+        console.log(rows);
+        return JSON.stringify(rows);
       });
     }); 
   },
