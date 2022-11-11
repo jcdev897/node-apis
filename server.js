@@ -2,6 +2,7 @@
 
 var express = require('express');
 var app = express();
+const cors = require('cors');
 var fs = require('fs');
 var {parse} = require('csv-parse');
 
@@ -17,6 +18,7 @@ function makeId(length) {
   return result;
 }
 
+app.use(cors());
 app.set("port", process.env.PORT || 4000);
 
 app.get('/datasets', function (req, res) {
@@ -28,14 +30,15 @@ app.get('/datasets', function (req, res) {
       configDatas.push(file.replace('.csv', ''));
     });
     response = JSON.stringify(configDatas);
+    console.log(response);
     res.end(response);
   });
 })
 
 app.get('/dataset/:id', function (req, res) {
    res.writeHead(200, {'Content-Type': 'application/json'});
-   var data = conn.getAllConfig(req.params.id);
-   res.end(data);
+   var data = conn.selectAll(req.params.id);
+   res.end(Buffer.from(JSON.stringify(data)));
 })
 
 app.get('/makeid', function (req, res) {
@@ -48,9 +51,7 @@ app.get('/makeid', function (req, res) {
 app.patch('/app-data/:id', function(req, res, next) {
   res.writeHead(200, {'Content-Type': 'application/json'});
   var id = req.params.id;
-  console.log(id);
   var jsonData = req.data;
-  console.log(req.body);
   conn.updateMapConfig(id, jsonData);
 })
 
