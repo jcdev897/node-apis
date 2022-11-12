@@ -21,23 +21,16 @@ module.exports = {
     return 'testa';
   },
   getAllConfig: function (tableName) {
-    let result = '';
-    db.serialize(() => {  
-      db.all(`SELECT * FROM ${tableName}`, (err, rows) => {
-        if (err){
-          throw err;
-        }
-        result = JSON.stringify(rows);
-        return result;
-      });
-    });
-    return result;
+
   },
   selectAll: function(tableName) {
-    db.serialize(function () {
-      const stmt = db.prepare(`SELECT * FROM ${tableName}`);
-      stmt.run();
-      stmt.finalize();
+    return new Promise((resolve, reject) => {
+      db.serialize(() => {
+        db.all(`SELECT * FROM ${tableName}`, (err, rows) => {
+          if (err) reject(err);
+          resolve(rows);
+        });
+      });
     });
   },
   closeDatabase: function() {

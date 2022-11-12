@@ -37,8 +37,10 @@ app.get('/datasets', function (req, res) {
 
 app.get('/dataset/:id', function (req, res) {
    res.writeHead(200, {'Content-Type': 'application/json'});
-   var data = conn.selectAll(req.params.id);
-   res.end(Buffer.from(JSON.stringify(data)));
+   let data = conn.selectAll(req.params.id).then((result) => {
+    console.log(result);
+    res.end(JSON.stringify(result));
+   });
 })
 
 app.get('/makeid', function (req, res) {
